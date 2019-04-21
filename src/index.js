@@ -1,24 +1,12 @@
-import extractToken from "./extractToken";
-import {spotify_play} from './jspotify.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-let token = extractToken()
-let albums = [];
+import './styles.scss'
 
-// Get all the albums
-function getAlbum(){
-    fetch('https://api.spotify.com/v1/me/albums', {
-        headers: {
-            Authorization: `Bearer ${token}`
-        }
-    })
-    .then(r => r.json())
-    .then(d => {
-        albums = d.items
+import App from './Components/App.js'
 
-        
-        let randomalbum = albums[Math.round(Math.random() * albums.length)]
-        spotify_play(token, randomalbum.album.id)
-    })
-}
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)
 
-getAlbum()

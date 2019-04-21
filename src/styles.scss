@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+
+$background: #2a1b3d;
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: $background;
+    color: whitesmoke;
+
+    #container {
+        padding: 15px;
+    }
+
+    h1 {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    #button {
+        font-size: 0.9em;
+        background: #d83f87;
+        margin: 0 5px 0 0;
+        padding: 10px 10px;
+        border-radius: 5px;
+        color: whitesmoke;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #song {
+        margin: 20px auto;
+
+        h1 {
+            margin: 5px;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        #text {
+            text-align: left;
+            margin: 5px 0;
+        }
+    }
+}

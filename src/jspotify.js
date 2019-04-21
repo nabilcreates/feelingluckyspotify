@@ -62,7 +62,7 @@ export function spotify_play(token, context_uri){
                 'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify({
-                "context_uri" : `spotify:album:${context_uri}`
+                "uris" : [`${context_uri}`]
             })
         })
     }
