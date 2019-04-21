@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 
-$background: #2a1b3d;
+$background: #19181a;
 
 body {
     font-family: "Roboto", sans-serif;
     background: $background;
     color: whitesmoke;
+    text-align: center;
 
     #container {
         padding: 15px;
@@ -21,9 +22,15 @@ body {
         font-weight: 300;
     }
     
+    .header{
+        background: lighten($background, 3%);
+        text-align: center;
+        margin: 10px 0;
+    }
+    
     #button {
         font-size: 0.9em;
-        background: #d83f87;
+        background: #479761;
         margin: 0 5px 0 0;
         padding: 10px 10px;
         border-radius: 5px;
@@ -36,15 +43,14 @@ body {
         margin: 20px auto;
 
         h1 {
-            margin: 5px;
+            margin: 5px 0;
         }
 
         img {
-            width: 50%;
+            width: 250px;
         }
 
         #text {
-            text-align: left;
             margin: 5px 0;
         }
     }

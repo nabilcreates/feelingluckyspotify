@@ -80,22 +80,36 @@ class App extends React.Component{
     
     render(){
         return(
-            <div id='container'>
+            <div>
 
 
                 {this.state.token !== false ?
                 
                 <div>
-                <a id='button' onClick={this.handleClick} >Feeling Lucky</a>
 
                 {this.state.song_artist !== false && this.state.song_name !== false ? 
-                    <div id='song'>
-                        {/* Render album image */}
-                        <img src={this.state.album_image} ></img>
+
+                    <div>
+                        <div id='container' className='header'>
+                            <h1>feelinglucky</h1>
+                            <p>Feeling Lucky? Need that 'random' song?</p>
+
+                            <br></br>
+                            
+                            <a id='button' onClick={this.handleClick} >Randomize!</a>
+
+                            <br></br>
+                            <br></br>
+                        </div>
                     
-                        <div id='text'>
-                            <h1>{this.state.song_name}</h1>
-                            <p>{this.state.song_artist}</p>
+                        <div id='song'>
+                            {/* Render album image */}
+                            <img src={this.state.album_image} ></img>
+                        
+                            <div id='text'>
+                                <h1>{this.state.song_name}</h1>
+                                <p>{this.state.song_artist}</p>
+                            </div>
                         </div>
                     </div>
                 : null}
