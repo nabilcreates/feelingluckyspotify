@@ -92,6 +92,7 @@ class App extends React.Component{
                     <div>
                         <div id='container' className='header'>
                             <h1>feelinglucky</h1>
+
                             <p>Feeling Lucky? Need that 'random' song?</p>
 
                             <br></br>
